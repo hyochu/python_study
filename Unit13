@@ -1,0 +1,15 @@
+#Unit13. If 조건문
+
+if 조건식 :
+  코드
+if chuLen == 153 :
+  print('^___^')
+  
+  if chuOld > 20 :
+      print('ㅠ_ㅠ')
+  
+  else :
+      print('ㅎ_ㅎ')
+
+elif chuLen == 154 :
+  print('~^0^~')
