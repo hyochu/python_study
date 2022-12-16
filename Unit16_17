@@ -1,0 +1,36 @@
+Unit16. for문
+JS : for(var i = 0; i<100l i++){print(i)}
+PY : for i in range(100):
+        print(i)
+    => range외에도 시퀀스 객체 활용 가능
+    => reverse 사용 시 거꾸로 
+
+Unit17. While
+JS : 
+i = 0
+while(i<100){i++; print(i)}
+
+PY : 
+i = 0
+while i < 100:
+    print(i)
+    i = i+1
+# PY 에서는 ++ 사용 불가, 따라서 i = i + 1
+
+import random
+def solve(arr) :
+    return arr[random.randint(0, len(arr)-1)]
+a = [100, 1000, 10000, 800]
+print(solve(a))
+
+import rangdom
+def solves(a, k):
+    y = []
+    for i in range(k):
+        y.append(a[random.randint(0, len(a)-1)])
+        
+    
+a = [100. 200, 300, 400, 6000]
+k = 2
+print ( solves(a, k) )
+    
