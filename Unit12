@@ -1,0 +1,54 @@
+#Unit12. Dictionary
+
+# dict = {key : val}
+# 키가 중복되면 마지막에 저장한 값을 저장
+
+#dict 선언 방법
+x = {}
+y = dict()
+
+#Ex1)
+lux1 = dict(health = 490, mana = 334)
+>>lux1{'health' : 490, 'mana' : 334}
+ect :  zip, 튜플, dict 안에서 {}
+
+#dict 값 접근
+dict['key']
+
+#dict에 key 가 있는지 확인
+In 연산자 사용 'key' in dict => True or False
+
+#dict 길이 (고유 키의 개수 구하기)
+len(dict) 
+
+#dict의 Update
+x = {'b':1, 'c':2}
+x['a'] = 90
+-> Error
+x.update(a=90)
+x = {'a':90, 'b':1, 'c':2}
+-> 
+
+#dict의 Get
+x = {'a':90, 'b':1, 'c':2, 'd': 40}
+x.get('a') # key가 존재할 때
+-> 90
+x.get('z', 0) # key가 존재하지 않음
+-> 0
+
+#dict 에서 key-val 삭제
+x = {'a':90, 'b':1, 'c':2, 'd': 40}
+x.pop('a')
+-> 90
+x.pop('z', -1)
+-> -1
+del x['b']
+-> return없음
+x.popitem()
+-> ('a', 90)
+-> x = {'b':1, 'c':2, 'd': 40}
+x.clear()
+-> dict 초기화
+x.items() : 튜플 형태로 모든 key-val 쌍을 가져옴
+x.keys() :  배열 형태로 모든 key를 가져옴
+x.values() : 배열 형태로 모든 val을 가져옴
