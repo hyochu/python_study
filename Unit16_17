@@ -33,4 +33,15 @@ def solves(a, k):
 a = [100. 200, 300, 400, 6000]
 k = 2
 print ( solves(a, k) )
+
+def fromkeys(keys, k):
+    returnDict = {}
+    for key in keys:
+        returnDict.update({key:k})
+        
+    return returnDict
+
+keys = ['a', 'b', 'c', 'd']
+
+print( fromkeys(keys, 100) )
     
